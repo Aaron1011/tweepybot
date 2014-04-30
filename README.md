@@ -1,10 +1,21 @@
 # Hubot
 
-This is a version of GitHub's Campfire bot, hubot. He's pretty cool.
+This tweepybot, the IRC logger that runs on #tweepy
 
-This version is designed to be deployed on [Heroku][heroku]. This README was generated for you by hubot to help get you started. Definitely update and improve to talk about your own instance, how to use and deploy, what functionality he has, etc!
+### Necessary environment variables
 
-[heroku]: http://www.heroku.com
+To deploy tweepybot to Heroku, set these environment variables on Heroku:
+
+
+    heroku config:set HUBOT_IRC_ROOMS="#botwar"
+    heroku config:set HUBOT_IRC_UNFLOOD="600"
+    heroku config:set HUBOT_AUTH_ADMIN="joshthecoder,Aaron1011"
+    heroku config:set HUBOT_IRC_NICK="tweepybot"
+    heroku config:set HUBOT_IRC_SERVER="irc.freenode.net"
+    heroku config:set IRCLOGS_FOLDER="logs"
+    heroku config:set FILE_BRAIN_PATH="."
+
+Deploy to Heroku, and you're set
 
 ### Testing Hubot Locally
 
