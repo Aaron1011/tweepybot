@@ -24,7 +24,7 @@
     "hubot": ">= 2.6.0 < 3.0.0",
     "hubot-scripts": ">= 2.5.0 < 3.0.0",
     "hubot-irc": "~0.2.2",
-    "hubot-logger": "0.0.11"
+    "hubot-logger": "git+ssh://git@github.com:Aaron1011/hubot-logger.git"
   },
   "engines": {
     "node": ">= 0.8.x",
